@@ -9,11 +9,17 @@ polling_headers: authorization=bearer {{ api_key }}
 polling_body: ''
 id: 92674
 custom_fields:
+- keyname: whatever
+  name: About this plugin
+  field_type: author_bio
+  description: Shows the battery and WiFi status for a TRMNL device, using the TRMNL account API to also get battery voltage and WiFi RSSI. Originally based on <a href="https://usetrmnl.com/recipes/29604">TRMNL Battery Status</a>. Created by Simon Sundberg, @simosund in the TRMNL discord.
+  github_url: https://github.com/simosund/trmnl-plugins
+  learn_more_url: https://docs.usetrmnl.com/go/private-api/account-api
 - keyname: device_id
   field_type: string
   name: TRMNL device ID
-  description: The TRMNL API device ID (for https://usetrmnl/api/devices/<device ID)
-  help_text: You can find it among the list at for https://usetrmnl/api/devices
+  description: The TRMNL API device ID (for https://usetrmnl/api/devices/&lt;device ID&gt;)
+  help_text: You can find it among the list at https://usetrmnl/api/devices. For simple access, use e.g. https://usetrmnl.com/api-docs/index.html (you need to authenticate with the API key, see below).
 - keyname: api_key
   field_type: password
   name: TRMNL API key
