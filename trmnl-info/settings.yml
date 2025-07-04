@@ -1,0 +1,23 @@
+---
+strategy: polling
+no_screen_padding: 'no'
+dark_mode: 'no'
+static_data: ''
+polling_verb: get
+polling_url: https://usetrmnl.com/api/devices/{{ device_id }}
+polling_headers: authorization=bearer {{ api_key }}
+polling_body: ''
+id: 92674
+custom_fields:
+- keyname: device_id
+  field_type: string
+  name: TRMNL device ID
+  description: The TRMNL API device ID (for https://usetrmnl/api/devices/<device ID)
+  help_text: You can find it among the list at for https://usetrmnl/api/devices
+- keyname: api_key
+  field_type: password
+  name: TRMNL API key
+  description: Your TRMNL account API key (used for authorization)
+  help_text: Starts with "user_". You can find it under your TRMNL account settings.
+name: TRMNL info
+refresh_interval: 60

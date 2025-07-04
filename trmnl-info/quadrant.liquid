@@ -1,0 +1,9 @@
+<div class="layout layout--col layout--center layout--stretch">
+  <!-- Battery -->
+  {% render "battery_info", data: data, size: "xsmall" %}
+  <!-- WiFi -->
+  {% render "wifi_info", data: data, size: "xsmall" %}
+</div>
+
+<!-- Title bar fixed at the bottom -->
+{% render "titlebar", data: data, trmnl: trmnl %}
